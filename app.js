@@ -11,7 +11,7 @@ new Vue({
           if(this.noResi !== '' && this.layanan !== ''){
 
             this.tampilkan('loading');
-            var endPoint = 'http://wahidganteng.ga/process/api/470e9ccb4849637a807a4498a31946a9/cek-resi?jasa='+this.layanan+'&resi='+this.noResi;
+            var endPoint = 'https://wahidganteng.ga/process/api/470e9ccb4849637a807a4498a31946a9/cek-resi?jasa='+this.layanan+'&resi='+this.noResi;
             this.$http.get(endPoint).then(res => {
                 if(res.body.status === 'sukses'){
 
